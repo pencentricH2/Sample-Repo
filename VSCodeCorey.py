@@ -1,4 +1,3 @@
-import math
 import sys
 from os import rename
 
@@ -15,7 +14,9 @@ def greet(who_to_greet):
 
 name = input("Name? ")
 print("Hello ", name)
+print("Hello Again ", name)
 
 # print(greet("World"))
-# r = requests.get("https://coreyms.com")
-# print(r.status_code)
+r = requests.get("https://coreyms.com")
+print(r.status_code)
+print(r.ok)
